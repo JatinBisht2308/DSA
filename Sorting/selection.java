@@ -11,9 +11,17 @@ public class selection {
 
    public static void selectionSort(int[] arr) {
       for (int i = 0; i < arr.length-2; i++) {
-         for (int j = i+1; j < arr.length-1; j++) {
-                         
+         int min = i;
+         for (int j = i+1; j < arr.length; j++) {
+            if(arr[j]<arr[i])
+            {
+               min = j;
+            }
          }
+         // swapping arr[i] with the smalles element found so far
+         int temp = arr[i];
+         arr[i] = arr[min];
+         arr[min] = temp; 
       }
    }
 
