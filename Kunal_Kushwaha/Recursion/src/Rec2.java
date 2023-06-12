@@ -5,12 +5,12 @@ public class Rec2 {
         Scanner scan = new Scanner(System.in);
         System.out.println(" enter the number:");
         int n = scan.nextInt();
-        System.out.println(fib(n));
+        System.out.println(fib(n-1));
     }
     public static int fib(int n)
     {
 //         base condition
-        if(n<2)
+        if(n<=1)
         {
             return n;
         }
