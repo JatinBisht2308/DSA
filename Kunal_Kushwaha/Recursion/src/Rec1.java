@@ -7,8 +7,10 @@ public class Rec1 {
         Scanner scan = new Scanner(System.in);
         System.out.println("enter the number till u want to print the digits:");
         int n = scan.nextInt();
-        oneToN(n,1);
+//        oneToN(n,1);
+        oneTon2(n);
     }
+//    this method is using stack building
     public static void oneToN(int n,int s)
     {
 //         base condition
@@ -18,5 +20,16 @@ public class Rec1 {
         }
         System.out.println(s);
         oneToN(n,s+1);
+    }
+    // this method is using stack finishing
+    public static void oneTon2(int n)
+    {
+//      base condition
+        if(n==0)
+        {
+            return;
+        }
+        oneTon2(n-1);
+        System.out.println(n);
     }
 }
