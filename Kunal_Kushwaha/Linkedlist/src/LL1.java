@@ -21,6 +21,21 @@ public class LL1 {
          }
          size+=1;
     }
+//     inserting element at the last of the node
+    public void insertionLast(int value)
+    {
+//       if the list is empty then
+        if(tail==null)
+        {
+            insertionFirst(value);
+        }
+//         if not
+        Node node = new Node(value);
+        tail.next = node;
+        tail = node;
+        size+=1;
+
+    }
 //  method to display all the elements in a list
     public void display()
     {
