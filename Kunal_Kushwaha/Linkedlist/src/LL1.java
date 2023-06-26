@@ -29,12 +29,33 @@ public class LL1 {
         {
             insertionFirst(value);
         }
-//         if not
-        Node node = new Node(value);
-        tail.next = node;
-        tail = node;
-        size+=1;
+        else{
+            //         if not
+            Node node = new Node(value);
+            tail.next = node;
+            tail = node;
+            size+=1;
+        }
 
+    }
+//    inserting element at an particular position
+    public void insertionSpecific(int value,int index)
+    {
+//        if the index at 0 then call the insertionFirst
+        if(index == 0)
+        {
+            insertionFirst(value);
+        }
+        else {
+            Node node = new Node(value);
+            Node temp = head;
+            for (int i = 1; i < index; i++) {
+                temp = temp.next;
+            }
+            node.next = temp.next;
+            temp.next = node;
+            size += 1;
+        }
     }
 //  method to display all the elements in a list
     public void display()

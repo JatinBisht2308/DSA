@@ -12,5 +12,7 @@ public class Main {
       list.insertionLast(6);
       list.insertionLast(7);
       list.display();
+      list.insertionSpecific(100,7);
+      list.display();
     }
 }
