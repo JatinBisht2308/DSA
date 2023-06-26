@@ -21,7 +21,16 @@ public class LL1 {
          }
          size+=1;
     }
-
+//  method to display all the elements in a list
+    public void display()
+    {
+        Node temp = head;
+        while(temp!=null) {
+            System.out.print(temp.val+" -> ");
+            temp = temp.next;
+        }
+        System.out.println("END");
+    }
    private class Node{
        private int val;
        private Node next;
