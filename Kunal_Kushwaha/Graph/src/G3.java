@@ -49,6 +49,7 @@ public static void createGraph(ArrayList<Edge> graph[])
         System.out.println("Vertex in the given graph are:");
        BFS(graph);
     }
+//    ------------------------------ BFS Algorithm starts here ---------------------------------
     public static void BFS(ArrayList<Edge> graph[])
     {
 //      1)- Create an queue.
